@@ -18,6 +18,10 @@
 			{
 				"command": "extension.quoteWrap",
 				"title": "Wrap with single quote"
+			},
+			{
+				"command": "extension.helloWorld",
+				"title": "Test hello world"
 			}
 		]
 	},
