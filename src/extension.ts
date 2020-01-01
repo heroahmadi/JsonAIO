@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 				selection = new vscode.Selection(document.positionAt(0), document.positionAt(document.getText().length));
 			}
 
-			let jsonString = document.getText(selection);
+			let jsonString = document.getText(selection).replace("'", "\\'");
 			let quotedString = "'" + jsonString + "'";
 			editor.edit(editBuilder => {
 				editBuilder.replace(selection, quotedString);
