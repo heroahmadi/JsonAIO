@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 				editBuilder.replace(selection, quotedString);
 			})
 			
-			editor.selection = new vscode.Selection(document.positionAt(0), document.positionAt(0));
+			editor.selection = new vscode.Selection(selection.end, selection.end);
 		}
 	});
 
